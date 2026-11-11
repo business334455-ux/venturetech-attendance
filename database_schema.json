@@ -1,0 +1,37 @@
+{
+  "institutes": {
+    "venturetech": {
+      "branches": {
+        "sheikhupura": {
+          "name": "Sheikhupura Main Campus",
+          "latitude": 31.7131,
+          "longitude": 73.9783,
+          "radius_meters": 150
+        },
+        "hardev": {
+          "name": "Hardev Center Campus",
+          "latitude": 31.6850,
+          "longitude": 74.0120,
+          "radius_meters": 150
+        }
+      },
+      "students_schema": {
+        "roll_no": "String (e.g. VT-2026-001)",
+        "full_name": "String",
+        "course": "String (Graphic Design / Web Dev / Basic / AI)",
+        "branch": "String (sheikhupura / hardev)",
+        "face_embedding": "Array of 192 Float numbers",
+        "registered_at": "Timestamp"
+      },
+      "attendance_logs_schema": {
+        "roll_no": "String",
+        "student_name": "String",
+        "branch": "String",
+        "punch_type": "IN / OUT",
+        "status": "On-Time / Late",
+        "verified_by": "Face + GPS",
+        "timestamp": "Timestamp"
+      }
+    }
+  }
+}
